@@ -1,0 +1,12 @@
+#pragma once
+#include <string>
+#include <vector>
+#include <iostream>
+
+std::string INPUT_DAY_? = "C:\\Users\\anblo\\Documents\\CodingProjects\\AoC_Uni\\inputs\\day?.txt";
+std::string INPUT_DAY_?_example = "C:\\Users\\anblo\\Documents\\CodingProjects\\AoC_Uni\\inputs\\day?_example.txt";
+
+namespace day?{
+    unsigned long long solve_A(std::string input);
+    unsigned long long solve_B(std::string input);
+}
