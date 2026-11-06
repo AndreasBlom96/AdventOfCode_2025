@@ -4,7 +4,7 @@ import os
 
 
 def fetch_input_data(day):
-    year = 2024
+    year = 2025
     print(f"fetching input data for day:{day:02} , year: {year}")
     url = f"https://adventofcode.com/{year}/day/{day}/input"
 
