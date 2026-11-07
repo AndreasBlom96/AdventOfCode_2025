@@ -17,8 +17,13 @@ uint64_t solve_A(const char* input_file, int DEBUG){
 
     FILE* fd = fopen(input_file, "r");
 
-    while (fgets(line, LINE_SIZE, fd) != NULL)
+    if (!fd)
     {
+        printf("could not open file at: %s", input_file);
+        return -1;
+    }
+
+    while(fgets(line, LINE_SIZE, fd)){
         direction = line[0];
         steps = atoi(line+1);
         
@@ -46,6 +51,7 @@ uint64_t solve_A(const char* input_file, int DEBUG){
             printf("\n\n");
         }
     }
+    fclose(fd);
     return answer;
 }
 
@@ -91,7 +97,7 @@ uint64_t solve_B(const char* input_file, int DEBUG){
 
         answer += crossings;    
         
-        if (DEBUG > 0)
+        if(DEBUG > 0)
         {
             printf("line: %s", line);
             printf("direcion: %c -> ", direction);

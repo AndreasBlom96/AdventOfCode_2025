@@ -71,28 +71,28 @@ include CMakeFiles/day1.dir/flags.make
 CMakeFiles/day1.dir/codegen:
 .PHONY : CMakeFiles/day1.dir/codegen
 
-CMakeFiles/day1.dir/days/day1.c.obj: CMakeFiles/day1.dir/flags.make
-CMakeFiles/day1.dir/days/day1.c.obj: C:/Users/anblo/Documents/CodingProjects/AoC_2025/days/day1.c
-CMakeFiles/day1.dir/days/day1.c.obj: CMakeFiles/day1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anblo\Documents\CodingProjects\AoC_2025\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/day1.dir/days/day1.c.obj"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/day1.dir/days/day1.c.obj -MF CMakeFiles\day1.dir\days\day1.c.obj.d -o CMakeFiles\day1.dir\days\day1.c.obj -c C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1.c
+CMakeFiles/day1.dir/days/day1/day1.c.obj: CMakeFiles/day1.dir/flags.make
+CMakeFiles/day1.dir/days/day1/day1.c.obj: C:/Users/anblo/Documents/CodingProjects/AoC_2025/days/day1/day1.c
+CMakeFiles/day1.dir/days/day1/day1.c.obj: CMakeFiles/day1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\anblo\Documents\CodingProjects\AoC_2025\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/day1.dir/days/day1/day1.c.obj"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/day1.dir/days/day1/day1.c.obj -MF CMakeFiles\day1.dir\days\day1\day1.c.obj.d -o CMakeFiles\day1.dir\days\day1\day1.c.obj -c C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1\day1.c
 
-CMakeFiles/day1.dir/days/day1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/day1.dir/days/day1.c.i"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1.c > CMakeFiles\day1.dir\days\day1.c.i
+CMakeFiles/day1.dir/days/day1/day1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/day1.dir/days/day1/day1.c.i"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1\day1.c > CMakeFiles\day1.dir\days\day1\day1.c.i
 
-CMakeFiles/day1.dir/days/day1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/day1.dir/days/day1.c.s"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1.c -o CMakeFiles\day1.dir\days\day1.c.s
+CMakeFiles/day1.dir/days/day1/day1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/day1.dir/days/day1/day1.c.s"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\anblo\Documents\CodingProjects\AoC_2025\days\day1\day1.c -o CMakeFiles\day1.dir\days\day1\day1.c.s
 
 # Object files for target day1
 day1_OBJECTS = \
-"CMakeFiles/day1.dir/days/day1.c.obj"
+"CMakeFiles/day1.dir/days/day1/day1.c.obj"
 
 # External object files for target day1
 day1_EXTERNAL_OBJECTS =
 
-day1.exe: CMakeFiles/day1.dir/days/day1.c.obj
+day1.exe: CMakeFiles/day1.dir/days/day1/day1.c.obj
 day1.exe: CMakeFiles/day1.dir/build.make
 day1.exe: CMakeFiles/day1.dir/linkLibs.rsp
 day1.exe: CMakeFiles/day1.dir/objects1.rsp

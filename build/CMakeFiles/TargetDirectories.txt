@@ -1,3 +1,4 @@
 C:/Users/anblo/Documents/CodingProjects/AoC_2025/build/CMakeFiles/day1.dir
+C:/Users/anblo/Documents/CodingProjects/AoC_2025/build/CMakeFiles/day2.dir
 C:/Users/anblo/Documents/CodingProjects/AoC_2025/build/CMakeFiles/edit_cache.dir
 C:/Users/anblo/Documents/CodingProjects/AoC_2025/build/CMakeFiles/rebuild_cache.dir

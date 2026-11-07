@@ -1,8 +1,14 @@
 [
 {
   "directory": "C:/Users/anblo/Documents/CodingProjects/AoC_2025/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\day1.dir\\days\\day1.c.obj -c C:\\Users\\anblo\\Documents\\CodingProjects\\AoC_2025\\days\\day1.c",
-  "file": "C:/Users/anblo/Documents/CodingProjects/AoC_2025/days/day1.c",
-  "output": "CMakeFiles/day1.dir/days/day1.c.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\day1.dir\\days\\day1\\day1.c.obj -c C:\\Users\\anblo\\Documents\\CodingProjects\\AoC_2025\\days\\day1\\day1.c",
+  "file": "C:/Users/anblo/Documents/CodingProjects/AoC_2025/days/day1/day1.c",
+  "output": "CMakeFiles/day1.dir/days/day1/day1.c.obj"
+},
+{
+  "directory": "C:/Users/anblo/Documents/CodingProjects/AoC_2025/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\day2.dir\\days\\day2\\day2.c.obj -c C:\\Users\\anblo\\Documents\\CodingProjects\\AoC_2025\\days\\day2\\day2.c",
+  "file": "C:/Users/anblo/Documents/CodingProjects/AoC_2025/days/day2/day2.c",
+  "output": "CMakeFiles/day2.dir/days/day2/day2.c.obj"
 }
 ]

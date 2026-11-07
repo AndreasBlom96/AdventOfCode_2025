@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/day1.dir/days/day1.c.obj"
-  "CMakeFiles/day1.dir/days/day1.c.obj.d"
+  "CMakeFiles/day1.dir/days/day1/day1.c.obj"
+  "CMakeFiles/day1.dir/days/day1/day1.c.obj.d"
   "day1.exe"
   "day1.exe.manifest"
   "day1.pdb"

@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "AoC_2025",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "day1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-day1-Debug-d424e28594ab3bed31a1.json",
+					"jsonFile" : "target-day1-Debug-11874384d94103fa2f92.json",
 					"name" : "day1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day2-Debug-ec84e0e0e899eb42c8ed.json",
+					"name" : "day2",
 					"projectIndex" : 0
 				}
 			]

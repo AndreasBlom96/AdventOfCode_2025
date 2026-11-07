@@ -128,29 +128,66 @@ day1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/build
 .PHONY : day1/fast
 
-days/day1.obj: days/day1.c.obj
-.PHONY : days/day1.obj
+#=============================================================================
+# Target rules for targets named day2
+
+# Build rule for target.
+day2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 day2
+.PHONY : day2
+
+# fast build rule for target.
+day2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day2.dir\build.make CMakeFiles/day2.dir/build
+.PHONY : day2/fast
+
+days/day1/day1.obj: days/day1/day1.c.obj
+.PHONY : days/day1/day1.obj
 
 # target to build an object file
-days/day1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1.c.obj
-.PHONY : days/day1.c.obj
+days/day1/day1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1/day1.c.obj
+.PHONY : days/day1/day1.c.obj
 
-days/day1.i: days/day1.c.i
-.PHONY : days/day1.i
+days/day1/day1.i: days/day1/day1.c.i
+.PHONY : days/day1/day1.i
 
 # target to preprocess a source file
-days/day1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1.c.i
-.PHONY : days/day1.c.i
+days/day1/day1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1/day1.c.i
+.PHONY : days/day1/day1.c.i
 
-days/day1.s: days/day1.c.s
-.PHONY : days/day1.s
+days/day1/day1.s: days/day1/day1.c.s
+.PHONY : days/day1/day1.s
 
 # target to generate assembly for a file
-days/day1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1.c.s
-.PHONY : days/day1.c.s
+days/day1/day1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day1.dir\build.make CMakeFiles/day1.dir/days/day1/day1.c.s
+.PHONY : days/day1/day1.c.s
+
+days/day2/day2.obj: days/day2/day2.c.obj
+.PHONY : days/day2/day2.obj
+
+# target to build an object file
+days/day2/day2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day2.dir\build.make CMakeFiles/day2.dir/days/day2/day2.c.obj
+.PHONY : days/day2/day2.c.obj
+
+days/day2/day2.i: days/day2/day2.c.i
+.PHONY : days/day2/day2.i
+
+# target to preprocess a source file
+days/day2/day2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day2.dir\build.make CMakeFiles/day2.dir/days/day2/day2.c.i
+.PHONY : days/day2/day2.c.i
+
+days/day2/day2.s: days/day2/day2.c.s
+.PHONY : days/day2/day2.s
+
+# target to generate assembly for a file
+days/day2/day2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\day2.dir\build.make CMakeFiles/day2.dir/days/day2/day2.c.s
+.PHONY : days/day2/day2.c.s
 
 # Help Target
 help:
@@ -161,9 +198,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... day1
-	@echo ... days/day1.obj
-	@echo ... days/day1.i
-	@echo ... days/day1.s
+	@echo ... day2
+	@echo ... days/day1/day1.obj
+	@echo ... days/day1/day1.i
+	@echo ... days/day1/day1.s
+	@echo ... days/day2/day2.obj
+	@echo ... days/day2/day2.i
+	@echo ... days/day2/day2.s
 .PHONY : help
 
 
