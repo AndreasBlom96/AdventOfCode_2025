@@ -160,10 +160,10 @@ int check_symmetry(char *src, int *divisors, int divisor_length){
 }
 
 uint64_t solve_B(const char *input_file, int debug){
-    uint64_t answer=0;
     char line[LINE_SIZE];
-    printf("not started implementation");
+    uint64_t answer=0;
 
+    /* Open file*/
     FILE* fd = fopen(input_file, "r");
 
     if (!fd)
@@ -171,17 +171,103 @@ uint64_t solve_B(const char *input_file, int debug){
         printf("could not open file at: %s", input_file);
         return -1;
     }
-    
+    /*--------------------*/
 
     while (fgets(line, LINE_SIZE, fd) != NULL)
     {
-    
+        if (debug > 0)
+        {
+            printf("line: %s\n", line);
+        }
+        
+        char* substr = strtok(line, ",");
+        int i = 1;
+        while (substr && strlen(substr) > 1)
+        {
+            /* Fixing start and end numbers*/
+            char *delim_pos = strchr(substr, '-');
+            int length_start_str = delim_pos - substr;
+            if (debug > 0)
+            {
+                printf("substr: %s\n", substr);
+            }
+            
+            char *start = malloc(length_start_str + 1);
+            memcpy(start, substr, length_start_str);
+            start[length_start_str] = '\0';
+
+            char *end = delim_pos +1;
+            /* -------------------------------*/
+            
+            /*Make logic check here!!*/
+            uint64_t start_int = strtoull(start, NULL, 10);
+            uint64_t end_int = strtoull(end, NULL, 10);
+            
+            for(uint64_t i = start_int; i <= end_int; i++){
+                char current_number_as_string[32];
+
+                snprintf(current_number_as_string,
+                    sizeof(current_number_as_string),
+                    "%llu",
+                    (unsigned long long)i);
+                
+                if(check_repetition(current_number_as_string) == 1){
+                    if (debug > 0)
+                    {
+                        printf("found ID: %s\n", current_number_as_string);
+                    }
+                    answer += i;
+                }
+            }
+            /*-----------------------*/
+
+            /*prepare for next */
+            substr = strtok(NULL, ",");
+            if (debug > 0)
+            {
+                printf("\n");
+            }
+            
+            free(start);
+            i++;
+        }
     }
 
+    /*Closing and freeing data*/
     fclose(fd);
-
     return answer;
 }
+
+int check_repetition(char *src){
+    int length = strlen(src);
+
+    for(int i = 1; i <= length/2; i++){
+        if(length%i != 0){
+            continue;
+        }
+        char tmp1[i+1];
+        char tmp2[i+1];
+        
+        int found_rep = 1;
+        for (size_t k = 0; k < (length/i)-1; k++)
+        {
+            strncpy(tmp1, src+(k*i), i);
+            strncpy(tmp2, src+(k*i)+i, i);
+            tmp1[i] = '\0';
+            tmp2[i] = '\0';
+            if(strcmp(tmp1, tmp2) != 0){
+                found_rep = 0;
+                break;
+            }
+        }
+        if (found_rep == 1)
+        {
+            return 1;
+        }   
+    }
+    return 0;
+}
+
 
 uint64_t main(int argc, char* argv[]){
     const char* path = input_path;

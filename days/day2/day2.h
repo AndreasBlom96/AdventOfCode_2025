@@ -5,6 +5,7 @@
 
 int* factor(int number_of_letters, int *result_size);
 int check_symmetry(char *src, int *divisors, int divisor_length);
+int check_repetition(char *src);
 
 typedef struct
 {
